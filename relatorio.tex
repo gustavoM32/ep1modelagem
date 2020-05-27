@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{setspace}
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\usepackage{url}
+
+\setlength{\paperheight}{29.7cm}
+\setlength{\footskip}{1.0cm}
+\setlength{\textheight}{21.0cm}
+\setlength{\textwidth}{17.0cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\topmargin}{0.0cm} 
+
+\newsavebox{\fmbox}
+\newenvironment{fmpage}[1][.8\textwidth]{
+    \begin{lrbox}{\fmbox}
+      \begin{minipage}{#1}
+        \small
+}{
+      \end{minipage}
+    \end{lrbox}\fbox{\usebox{\fmbox}}
+}
+
+\newenvironment{exemplo}{
+  \begin{center}
+    \begin{fmpage}\small
+      \textbf{Exemplo:}\\
+}{
+    \end{fmpage}
+  \end{center}
+}
+
+\newenvironment{exemploc}{
+  \begin{center}
+    \begin{fmpage}\small
+      \emph{continuação...}\\
+}{
+    \end{fmpage}
+  \end{center}
+}
+
+\title{Relatório MAC0209 - IME - USP}
+
+\author{Davi de Menezes Pereira, 11221988\\
+Gustavo de Medeiros Carlos, 11276298\\
+Lucas Irineu Rebouças Guimarães, 11221713\\
+Luciano Rodrigues Saraiva Leão, 11221817\\
+Luiza Barros Reis Soezima, 11221842\\
+Marcos Siolin Martins, 11221709}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Este trabalho 
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+\section{Introdução}
+
+Escreva uma introdução contendo as subseções abaixo:
+
+\subsection{Motivação}
+
+XXXXXXXXX
+
+\subsection{Objetivos}
+
+Descreva aqui de maneira bastante sucinta, clara e direto, quais os objetivos deste experimento.
+
+\section{Materiais e métodos}
+
+XXXXXXXXX
+
+Nesta seção, descreva o cronograma de desenvolvimento realizado para o projeto (Ver Figura~\ref{fig:gantt}).
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{gantt1.png}
+    \includegraphics[width=0.7\textwidth]{gantt2.png}
+    \caption{\label{fig:gantt} Gantt chart adotado para o desenvolvimento do projeto.}
+  \end{center}
+\end{figure}
+
+\section{Resultados Experimentais}
+
+XXXXXXXXX
+
+\section{Conclusão}
+
+XXXXXXXXX
+
+\subsection*{Contribuições dos Autores}
+
+Descreva resumidamente as contribuições dos autores,  devendo constar as responsabilidades de cada membro da equipe. Como exemplo, veja a seção {\em Author’s Contributions} em:
+
+\url{http://www.biomedcentral.com/1471-2105/16/35}
+
+
+\end{document}
+
